@@ -10,6 +10,9 @@
 #' @param threads Kullanılacak iş parçacığı sayısı. 0 verilirse sistemdeki tüm çekirdekler kullanılır.
 #' @return N x N boyutunda bir mesafe matrisi.
 #' @export
+#' @examples
+#' matris <- matrix(runif(100), nrow = 10)
+#' paralelUzaklikC(matris, threads = 2)
 paralelUzaklikC <- function(X, threads = 0L) {
     .Call(`_ExamplePackage07_paralelUzaklikC`, X, threads)
 }
@@ -23,6 +26,9 @@ paralelUzaklikC <- function(X, threads = 0L) {
 #' @param n Pencere boyutu (pozitif bir tam sayı).
 #' @return Giriş vektörüyle aynı uzunlukta hareketli ortalamaları içeren vektör. İlk n-1 eleman NA olacaktır.
 #' @export
+#' @examples
+#' veri <- c(1, 2, 4, 8, 16, 32)
+#' hareketliOrtalamaC(veri, n = 3)
 hareketliOrtalamaC <- function(x, n) {
     .Call(`_ExamplePackage07_hareketliOrtalamaC`, x, n)
 }
@@ -36,6 +42,10 @@ hareketliOrtalamaC <- function(x, n) {
 #' @param grup Grupları belirten karakter vektörü.
 #' @return Grup isimlerini ve ortalamalarını içeren bir liste.
 #' @export
+#' @examples
+#' degerler <- c(10, 20, 15, 30, 25)
+#' kategoriler <- c("A", "B", "A", "B", "A")
+#' grupOzetC(degerler, kategoriler)
 grupOzetC <- function(x, grup) {
     .Call(`_ExamplePackage07_grupOzetC`, x, grup)
 }
@@ -43,6 +53,8 @@ grupOzetC <- function(x, grup) {
 #' C++ ile Vektörün Karesini Alan Hızlı Fonksiyon
 #' @param x Sayısal vektör
 #' @export
+#' @examples
+#' vektorKareC(c(1, 2, 3, 4))
 vektorKareC <- function(x) {
     .Call(`_ExamplePackage07_vektorKareC`, x)
 }

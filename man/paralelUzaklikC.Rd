@@ -18,3 +18,7 @@ N x N boyutunda bir mesafe matrisi.
 Bu fonksiyon, verilen bir matrisin satırları arasındaki
 Öklid mesafelerini paralel olarak hesaplar.
 }
+\examples{
+matris <- matrix(runif(100), nrow = 10)
+paralelUzaklikC(matris, threads = 2)
+}

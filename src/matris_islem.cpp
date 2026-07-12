@@ -4,6 +4,8 @@ using namespace Rcpp;
 //' C++ ile Vektörün Karesini Alan Hızlı Fonksiyon
 //' @param x Sayısal vektör
 //' @export
+//' @examples
+//' vektorKareC(c(1, 2, 3, 4))
 // [[Rcpp::export]]
 NumericVector vektorKareC(NumericVector x) {
     int n = x.size();

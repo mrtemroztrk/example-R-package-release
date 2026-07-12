@@ -18,3 +18,8 @@ Grup isimlerini ve ortalamalarını içeren bir liste.
 Bir vektörün değerlerini belirtilen gruplara göre gruplayarak
 ortalamalarını hızlıca hesaplar.
 }
+\examples{
+degerler <- c(10, 20, 15, 30, 25)
+kategoriler <- c("A", "B", "A", "B", "A")
+grupOzetC(degerler, kategoriler)
+}

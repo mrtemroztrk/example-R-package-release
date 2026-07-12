@@ -12,3 +12,6 @@ vektorKareC(x)
 \description{
 C++ ile Vektörün Karesini Alan Hızlı Fonksiyon
 }
+\examples{
+vektorKareC(c(1, 2, 3, 4))
+}

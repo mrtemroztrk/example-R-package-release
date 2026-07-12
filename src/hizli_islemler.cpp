@@ -18,6 +18,9 @@ using namespace Rcpp;
 //' @param threads Kullanılacak iş parçacığı sayısı. 0 verilirse sistemdeki tüm çekirdekler kullanılır.
 //' @return N x N boyutunda bir mesafe matrisi.
 //' @export
+//' @examples
+//' matris <- matrix(runif(100), nrow = 10)
+//' paralelUzaklikC(matris, threads = 2)
 // [[Rcpp::export]]
 NumericMatrix paralelUzaklikC(NumericMatrix X, int threads = 0) {
     int n = X.nrow();
@@ -60,6 +63,9 @@ NumericMatrix paralelUzaklikC(NumericMatrix X, int threads = 0) {
 //' @param n Pencere boyutu (pozitif bir tam sayı).
 //' @return Giriş vektörüyle aynı uzunlukta hareketli ortalamaları içeren vektör. İlk n-1 eleman NA olacaktır.
 //' @export
+//' @examples
+//' veri <- c(1, 2, 4, 8, 16, 32)
+//' hareketliOrtalamaC(veri, n = 3)
 // [[Rcpp::export]]
 NumericVector hareketliOrtalamaC(NumericVector x, int n) {
     int size = x.size();
@@ -98,6 +104,10 @@ NumericVector hareketliOrtalamaC(NumericVector x, int n) {
 //' @param grup Grupları belirten karakter vektörü.
 //' @return Grup isimlerini ve ortalamalarını içeren bir liste.
 //' @export
+//' @examples
+//' degerler <- c(10, 20, 15, 30, 25)
+//' kategoriler <- c("A", "B", "A", "B", "A")
+//' grupOzetC(degerler, kategoriler)
 // [[Rcpp::export]]
 List grupOzetC(NumericVector x, CharacterVector grup) {
     int n = x.size();

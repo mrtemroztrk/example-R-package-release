@@ -18,3 +18,7 @@ Giriş vektörüyle aynı uzunlukta hareketli ortalamaları içeren vektör. İl
 Bu fonksiyon, sayısal bir vektör üzerinde belirtilen pencere boyutuna göre
 hızlıca hareketli ortalama hesaplar.
 }
+\examples{
+veri <- c(1, 2, 4, 8, 16, 32)
+hareketliOrtalamaC(veri, n = 3)
+}
