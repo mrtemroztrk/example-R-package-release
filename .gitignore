@@ -1,0 +1,19 @@
+# History files
+.Rhistory
+.RData
+.Ruserdata
+
+# Example package tarballs
+*.tar.gz
+
+# Compiled files
+src/*.o
+src/*.so
+src/*.dll
+
+# Check directories
+*.Rcheck/
+..Rcheck/
+
+# Rstudio files
+.Rproj.user/
