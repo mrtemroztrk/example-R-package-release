@@ -1,13 +1,13 @@
-# ExamplePackage07 🚀
+# ExamplePackage07 
 
 `ExamplePackage07`, Rcpp ve OpenMP teknolojileri kullanılarak C++ ile yazılmış yüksek performanslı sayısal işlem fonksiyonları sunan bir R paketidir. Büyük veri kümeleri üzerinde hızlı işlem yapmak için optimize edilmiştir.
 
 ## Özellikler
 
-- 🏎️ **Paralel Mesafe Hesaplama:** OpenMP ile çok çekirdekli sistemlerde Öklid mesafesi hesaplama.
-- 📈 **Hızlı Hareketli Ortalama (Rolling Mean):** Kayan pencere (sliding window) algoritması ile anında hesaplama.
-- 📊 **Hızlı Grup Ortalamaları:** C++ `std::unordered_map` (hash table) yapısı ile `aggregate` işlemlerine göre çok daha hızlı gruplama.
-- ⚡ **Vektör Kare Alma:** R'ın standart döngülerine göre C++ seviyesinde hızlı vektör eleman karesi hesaplama.
+-  **Paralel Mesafe Hesaplama:** OpenMP ile çok çekirdekli sistemlerde Öklid mesafesi hesaplama.
+-  **Hızlı Hareketli Ortalama (Rolling Mean):** Kayan pencere (sliding window) algoritması ile anında hesaplama.
+-  **Hızlı Grup Ortalamaları:** C++ `std::unordered_map` (hash table) yapısı ile `aggregate` işlemlerine göre çok daha hızlı gruplama.
+-  **Vektör Kare Alma:** R'ın standart döngülerine göre C++ seviyesinde hızlı vektör eleman karesi hesaplama.
 
 ---
 
